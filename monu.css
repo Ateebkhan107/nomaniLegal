@@ -1,0 +1,425 @@
+/* General Styles */
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #fff;
+    background-color: #000; /* Black background */
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px 0;
+}
+
+/* Header Styles */
+header {
+    background-color: #000;
+    color: #fff;
+    padding: 20px 0;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header .brand {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+
+header .brand img {
+    width: 50px;
+    height: 50px;
+    border-radius: 20%;
+}
+
+header .brand h1 {
+    margin: 0;
+    font-size: 24px;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+}
+
+header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+
+/* Home Section */
+#home {
+    text-align: center;
+    padding: 150px 0;
+    background-image: url('laws.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    position: relative;
+}
+
+#home::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 1;
+}
+
+#home h2, #home p {
+    position: relative;
+    z-index: 2;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    animation: fadeIn 2s ease-in-out;
+}
+
+#home p {
+    font-size: 18px;
+    animation: slideUp 1.5s ease-in-out;
+}
+
+/* About Us Section */
+#aboutus {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+#aboutus h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#aboutus .boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#aboutus .box {
+    flex: 1 1 calc(33.33% - 40px);
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#aboutus .box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+#aboutus .box h3 {
+    font-size: 24px;
+    margin-bottom: 10px;
+    color: #1abc9c;
+}
+
+#aboutus .box p {
+    font-size: 16px;
+    color: #ccc;
+}
+
+/* Services Section */
+#services {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+#services h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#services .service-boxes {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+#services .service-box {
+    flex: 1 1 calc(25% - 40px);
+    background-color: #1a1a1a;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#services .service-box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3);
+}
+
+/* Contact Us Section */
+#contactus {
+    padding: 80px 0;
+    background-color: #000;
+}
+
+#contactus h1 {
+    font-size: 50px;
+    text-align: center;
+    margin-bottom: 40px;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    font-weight: bold;
+    color: #fff;
+    animation: fadeInDown 1.5s ease-in-out;
+}
+
+#contactus form {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #1a1a1a;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+#contactus .form-group {
+    margin-bottom: 20px;
+}
+
+#contactus label {
+    display: block;
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 5px;
+}
+
+#contactus input,
+#contactus textarea {
+    width: 100%;
+    padding: 6px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #333;
+    color: #fff;
+}
+
+#contactus textarea {
+    resize: vertical;
+}
+
+#contactus button {
+    background-color: #1abc9c;
+    color: #fff;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#contactus button:hover {
+    background-color: #16a085;
+}
+
+/* Footer Styles */
+footer {
+    background-color: #000;
+    color: #fff;
+    padding: 40px 0;
+    text-align: center;
+}
+
+footer .footer-content {
+    max-width: 600px;
+    margin: 0 auto;
+    padding: 10px;
+}
+
+footer .footer-content p {
+    font-size: 16px;
+    margin: 5px 0;
+}
+
+footer .footer-bottom {
+    margin-top: 20px;
+    padding-top: 10px;
+    border-top: 1px solid #333;
+}
+
+footer .footer-bottom p {
+    font-size: 14px;
+    color: #ccc;
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideUp {
+    from {
+        transform: translateY(20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Media Queries for Responsiveness */
+
+/* Tablets and Small Laptops (768px - 1024px) */
+@media (max-width: 1024px) {
+    header .brand h1 {
+        font-size: 20px; /* Smaller logo text */
+    }
+
+    #home h2 {
+        font-size: 32px; /* Smaller heading */
+    }
+
+    #home p {
+        font-size: 16px; /* Smaller paragraph */
+    }
+
+    #aboutus .box, #services .service-box {
+        flex: 1 1 calc(50% - 40px); /* 2 boxes per row */
+    }
+
+    #contactus form {
+        padding: 15px; /* Smaller padding */
+    }
+}
+
+/* Mobile Devices (up to 768px) */
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column; /* Stack logo and nav vertically */
+        text-align: center;
+    }
+
+    header .brand {
+        margin-bottom: 10px; /* Space between logo and nav */
+    }
+
+    header nav ul {
+        flex-direction: column; /* Stack nav links vertically */
+        gap: 10px;
+    }
+
+    #home {
+        padding: 100px 0; /* Smaller padding */
+    }
+
+    #home h2 {
+        font-size: 28px; /* Smaller heading */
+    }
+
+    #home p {
+        font-size: 14px; /* Smaller paragraph */
+    }
+
+    #aboutus h1, #services h1, #contactus h1 {
+        font-size: 36px; /* Smaller section headings */
+    }
+
+    #aboutus .box, #services .service-box {
+        flex: 1 1 100%; /* 1 box per row */
+    }
+
+    #contactus form {
+        padding: 20px; /* Smaller padding */
+    }
+
+    footer .footer-content p {
+        font-size: 14px; /* Smaller footer text */
+    }
+}
+
+/* Small Mobile Devices (up to 480px) */
+@media (max-width: 480px) {
+    #home h2 {
+        font-size: 24px; /* Smaller heading */
+    }
+
+    #home p {
+        font-size: 12px; /* Smaller paragraph */
+    }
+
+    #aboutus h1, #services h1, #contactus h1 {
+        font-size: 28px; /* Smaller section headings */
+    }
+
+    #contactus input, #contactus textarea {
+        font-size: 14px; /* Smaller form text */
+        
+
+        
+    }
+
+    #contactus button {
+        font-size: 16px; /* Smaller button text */
+    }
+}
